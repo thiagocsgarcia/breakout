@@ -22,3 +22,11 @@ $factory->define(breakout\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->state(\breakout\User::class, 'admin', function (Faker\Generator $faker){
+
+    return[
+        'role' => \breakout\User::ROLE_ADMIN
+    ];
+
+});
