@@ -17,5 +17,11 @@ class UsersTableSeeder extends Seeder
                 'name' => 'Thiago Garcia',
                 'email' => 'admin@user.com'
             ]);
+
+        factory(\breakout\User::class, 1)            
+            ->create([
+                'name' => 'cliente da Silva',
+                'email' => 'cliente@cliente.com'
+            ]);
     }
 }
