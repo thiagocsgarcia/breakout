@@ -56,7 +56,7 @@
                                 </button>
 
                                 <a class="btn btn-link" href="{{ route('admin.password.request') }}">
-                                    Não se esqueça xD
+                                    Não se esqueça
                                 </a>
                             </div>
                         </div>
