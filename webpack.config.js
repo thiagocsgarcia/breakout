@@ -10,10 +10,10 @@ module.exports = {
         publicPath: '/build/'
     },
     plugins: [
-        new webpack.ProvidePlugin([
+        new webpack.ProvidePlugin({
             'window.$': 'jquery',
             'window.jQuery': 'jquery'
-        ])
+        })
     ],
     module: {
         loaders: [
@@ -28,4 +28,4 @@ module.exports = {
             },
         ],
     }    
-}
+};
